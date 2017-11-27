@@ -1,0 +1,113 @@
+$primary-color: #393939;
+$secondary-color: #C33827;
+$third-color: #e6e6e6;
+$secondary-text-color: #c8C8C8;
+
+$title-size: 1.5rem;
+$letter-title-size: 2rem;
+$subtitle-size: 1.3rem;
+$important-text-size: 1rem;
+$text-size: 0.815rem;
+
+@mixin flex($direction, $align, $justify){
+  display: flex;
+  flex-direction: $direction;
+  align-items: $align;
+  justify-content: $justify;
+};
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+  font-family: "Arial", "sans-serif";
+  background-color: $third-color;
+  .background-logo-container {
+    position: fixed;
+    top: 117px;
+    width: 100vw;
+    height: calc(100vh - 190px);
+    text-align: center;
+    z-index: -1;
+    .background-logo {
+      max-width: 100%;
+      max-height: 100%;
+    }
+  }
+  header{
+    min-height: 90px;
+  }
+  .main-navigation {
+    background-color: $primary-color;
+    z-index: 1;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    @include flex(row, center, space-between);
+    .nav-logo-container {
+      @include flex(row, center, space-around);
+      flex: 1;
+      max-width: 500px;
+      img {
+        width: 70px;
+      }
+    }
+    ul.navigation {
+      list-style: none;
+      @include flex(row, center, space-around);
+      flex: 2;
+      max-width: 700px;
+      a {
+        color: $secondary-text-color;
+        text-decoration: none;
+        font-size: $subtitle-size;
+        font-weight: 300;
+        &:active,
+        &:hover,
+        &:focus {
+          padding-bottom: 5px;
+          border-bottom: 2px solid $secondary-color;
+        }
+      }
+    }
+  }
+  section{
+    padding: 1rem 2rem 3rem;
+    @media(min-width: 860px){
+      padding: 1rem 7rem 3rem;
+      box-sizing: border-box;
+    }
+  }
+  .main-section-title{
+    font-size: $title-size;
+    color: $primary-color;
+    flex: 1;
+
+    strong{
+      font-size: $letter-title-size;
+      color: $secondary-color;
+    }
+  }
+  .second-title{
+    font-size: $subtitle-size;
+    color: $primary-color;
+    flex: 1;
+    strong{
+      font-size: $letter-title-size;
+      color: $secondary-color;
+    }
+  }
+  p{
+    font-size: 0.815rem;
+    line-height: 1.2rem;
+  }
+  footer {
+    height: 100px;
+    width: 100vw;
+    background-color: $primary-color;
+  }
+}

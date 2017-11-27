@@ -2,9 +2,32 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>HitBoxMakers</title>
 </head>
 <body>
-    <h1>Hello</h1>
+    <div class="background-logo-container">
+        <img class="background-logo" src="./img/Logo_HitboxMakers_background.svg" alt="logo HitBox">
+    </div>
+    <header class="header-home">
+        ${require('./partials/nav.html')}
+        <div class="into-Logo-container">
+            <img class="into-Logo" src="./img/Logo_HitboxMakers_Full_final.png" alt="">
+        </div>
+        <div class="presentation-container">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a ipsum dolor. Pellentesque venenatis
+                congue nibh vitae vulputate. Vestibulum eu scelerisque nunc, nec gravida lacus.</p>
+        </div>
+        <a class="diary-link" href="https://www.w3schools.com">Agenda</a>
+    </header>
+    <section class="news-section">
+        <h1 class="main-section-title"><strong>A</strong>ctualité</h1>
+        <div class="articles-list">
+            ${require('./partials/article.html')}
+            ${require('./partials/article.html')}
+            ${require('./partials/article.html')}
+            ${require('./partials/article.html')}
+        </div>
+    </section>
+    ${require('./partials/footer.html')}
 </body>
 </html>

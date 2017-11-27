@@ -1,0 +1,42 @@
+@import './commonStyle.scss';
+@import './styles/article.scss';
+@import './styles/presentation.scss';
+@import './styles/game.scss';
+@import './styles/submission.scss';
+
+
+body{
+  .header-home{
+    background-color: $primary-color;
+    background-image: url(img/Logo_HitboxMakers_background.svg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center 115px;
+    background-size: 100% calc(100vh - 190px);
+    padding-top: 180px;
+    padding-bottom: 100px;
+    .into-Logo-container{
+      text-align: center;
+    }
+    .presentation-container{
+      width: 80vw;
+      font-size: $subtitle-size;
+      color: $third-color;
+      text-align: center;
+      margin: 3rem auto;
+    }
+    .diary-link{
+      display: block;
+      margin: 0 auto;
+      text-align: center;
+      font-size: $subtitle-size;
+      width: 220px;
+      padding: 0.6rem 0;
+      border-radius: 3px;
+      background-color: $third-color;
+      color: $primary-color;
+      text-decoration: none;
+      cursor: pointer;
+    }
+  }
+}
