@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HitBoxMakers</title>
+</head>
+<body>
+<div class="background-logo-container">
+    <img class="background-logo" src="./img/Logo_HitboxMakers_background.svg" alt="logo HitBox">
+</div>
+<header class="header">
+    ${require('./partials/nav.html')}
+</header>
+<section class="submission-container">
+    <h1 class="main-section-title"><strong>S</strong>oumettez vos jeux !!</h1>
+    <div class="form-container">
+        <div class="inputs-container">
+            <input type="text" placeholder="Titre du jeux">
+            <input type="text" placeholder="Lien du jeux">
+            <textarea class="description" type="text" row="4"  placeholder="Desription (histoire, gameplay, compatibilité...) "></textarea>
+            <input type="text" placeholder="Auteurs">
+        </div>
+        <div class="add-files-container">
+            <span>Ajouter des images : </span>
+            <button>Fichier</button>
+            <div class="downloaded-files">
+                <div class="file" style="min-width: 150px; height: 150px; background-color:#e6e6e6; background-image:url(/src/img/Logo_HitboxMakers_background.svg)"></div>
+                <div class="file" style="min-width: 150px; height: 150px; background-color:#e6e6e6; background-image:url(/src/img/Logo_HitboxMakers_background.svg)"></div>
+                <div class="file" style="min-width: 150px; height: 150px; background-color:#e6e6e6; background-image:url(/src/img/Logo_HitboxMakers_background.svg)"></div>
+            </div>
+            <input class="send-button" type="submit">
+        </div>
+        </div>
+    </div>
+
+
+</section>
+${require('./partials/footer.html')}
+</body>
+</html>

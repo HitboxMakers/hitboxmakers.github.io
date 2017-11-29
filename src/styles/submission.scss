@@ -1,0 +1,94 @@
+.submission-container{
+  min-height: calc(100vh - 190px);
+  .form-container{
+    background-color: $primary-color;
+    background-image: url(/src/img/Logo_HitboxMakers_background.svg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center 115px;
+    background-size: 100% calc(100vh - 190px);
+    flex-wrap: wrap;
+    width: 100vw;
+    @include flex(row, flex-start, space-around);
+    margin-left: -2rem;
+    padding: 1rem 2rem 3rem;
+    box-sizing: border-box;
+    @media(min-width: 860px){
+      margin-left: -7rem;
+      padding: 3rem 7rem 3rem;
+    }
+    .inputs-container{
+      @include flex(column, center, space-between);
+      width: 100%;
+      @media(min-width: 720px) {
+        width: 45%;
+        min-width: 460px;
+        max-width: 550px;
+        margin-right: 1rem;
+      }
+      input, textarea{
+        min-width: 300px;
+        width: 100%;
+        height: 44px;
+        margin-bottom: 1rem;
+        font-size: $important-text-size;
+        line-height: 2rem;
+        border: none;
+        &::placeholder{
+          font-size: $important-text-size;
+        }
+      }
+      textarea.description{
+        height: 150px;
+      }
+    }
+    .add-files-container{
+      width: 100%;
+      @include flex(column, flex-start, space-between);
+      @media(min-width: 720px){
+        width: 45%;
+        min-width: 460px;
+        max-width: 550px;
+      }
+      span{
+        font-size: $important-text-size;
+        color: $secondary-text-color;
+        margin-bottom: 1rem;
+      }
+      button{
+        width: 150px;
+        height: 35px;
+        font-size: 1rem;
+        border-radius: 3px;
+        margin-bottom: 3rem;
+      }
+      .downloaded-files{
+        width: 100%;
+        @include flex(row, flex-start, center);
+        @media(min-width: 720px) {
+          @include flex(row, flex-start, space-between);
+        }
+        flex-wrap: wrap;
+        .file {
+          background-repeat: no-repeat;
+          background-position: center center;
+          background-size: 90%;
+          margin-left: 0.2rem;
+          margin-bottom: 0.2rem;
+        }
+
+      }
+      .send-button{
+        background-color: $secondary-color;
+        border: none;
+        width: 150px;
+        height: 35px;
+        color:$secondary-text-color;
+        font-size: 1rem;
+        display: block;
+        margin: 3rem 0 0 auto;
+      }
+    }
+  }
+
+}

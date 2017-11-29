@@ -1,0 +1,104 @@
+.game-container{
+  min-height: calc(100vh - 190px);
+  .game-search{
+    display: block;
+    margin: 3rem auto 5rem;
+    min-width: 300px;
+    width: 35%;
+    background-color: transparent;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 2px solid $primary-color;
+    line-height: 2rem;
+    font-size: 1rem;
+    &::placeholder{
+      color: rgba(57, 57, 57, 0.59);
+    }
+    &:focus{
+      outline: none;
+    }
+  }
+  ul{
+    list-style:none;
+    padding-left: 0;
+    flex-wrap: wrap;
+    @include flex(row, center, center);
+    @media(min-width: 720px){
+      @include flex(row, center, space-between);
+
+    }
+
+    li{
+      margin-bottom: 3rem;
+      margin-right: 1rem;
+      margin-left: 1rem;
+      position: relative;
+      width: 40%;
+      max-width: 300px;
+      padding: 1rem;
+      img{
+        max-width: 100%;
+        max-height: 100%;
+        margin: 0 auto;
+        display: block;
+      }
+      @media(min-width: 720px) {
+        &:hover .description-container{
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+
+      }
+      .description-container{
+        background-color: rgba(57, 57, 57, 0.9);
+        height: 100%;
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        @media(min-width: 720px) {
+          display: none;
+        }
+        .title-game{
+          height: 3rem;
+          width: 100%;
+          background-color: $secondary-color;
+          h1{
+            width: 100%;
+            margin-top: 0;
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+            line-height: 1rem;
+            color:$secondary-text-color;
+            text-align: center;
+          }
+        }
+        .description{
+          margin: 0;
+          padding: 1rem 1rem 0 1rem;
+          color: $secondary-text-color;
+          font-size: $text-size;
+          line-height: 1rem;
+          max-height: 5rem;
+          overflow: hidden;
+          display: block;
+        }
+        .read-next-link{
+          margin-right: 1rem;
+          text-decoration: none;
+          line-height: 1rem;
+          font-size:$text-size;
+          text-align: right;
+          display: block;
+          color: $third-color;
+          &:before{
+            content:"\2026 "
+          }
+        }
+      }
+    }
+  }
+}

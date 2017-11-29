@@ -103,14 +103,23 @@
     }
     .article{
       @media(min-width: 720px){
-        min-width: 27%;
+        width: 27%;
+        min-width: 275px;
         max-width: 27%;
       }
-      .article-title{
-        color: $secondary-text-color;
-      }
-      .article-content{
-        color:$secondary-text-color;
+      .article-content-container{
+        .article-title{
+          color: $secondary-text-color;
+        }
+        .article-content{
+          color:$secondary-text-color;
+        }
+        .read-next-link {
+          color: $third-color;
+          &:hover{
+            color: $secondary-color;
+          }
+        }
       }
     }
   }

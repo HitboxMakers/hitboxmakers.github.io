@@ -1,0 +1,40 @@
+.presentation-container{
+  .presentation-introduction{
+    font-size:$important-text-size;
+    color:$primary-color;
+    text-align: center;
+    display: inline-block;
+  }
+  .presentation-content{
+    @include flex(row, center, space-around);
+    @include flex(row, center, space-around);
+  }
+  .presentation-hitbox, .localisation{
+    margin-top: 3rem;
+    margin-bottom: 4rem;
+    img{
+      max-width: 50%;
+      max-height: 300px;
+    }
+    .content{
+      width: 50%;
+
+    }
+  }
+  .presentation-ludum{
+    margin-top: 3rem;
+    margin-bottom: 4rem;
+    h2{
+      margin-bottom: 1rem;
+      margin-top: 2rem;
+      margin-left: 2rem;
+    }
+    img{
+      max-width: 30%;
+      max-height: 200px;
+    }
+    .content{
+      width: 50%;
+    }
+  }
+}
