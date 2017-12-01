@@ -1,0 +1,65 @@
+.diary-container{
+  min-height: calc(100vh - 190px);
+  article.diary-program{
+    width: 100vw;
+    margin-left: -2rem;
+    padding: 1rem 2rem 3rem;
+    box-sizing: border-box;
+    @media(min-width: 860px){
+      margin-left: -7rem;
+      padding: 3rem 7rem 3rem;
+    }
+    &:nth-child(odd) {
+      background-color: $primary-color;
+      background-image: url(/src/img/Logo_HitboxMakers_background.svg);
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      background-position: center 115px;
+      background-size: 100% calc(100vh - 190px);
+      & .diary-program-container{
+        .diary-program-picture {
+          background-color: $third-color;
+        }
+        h1.program-name{
+          color:$secondary-text-color;
+        }
+        .diary-program-description{
+          color:$secondary-text-color;
+        }
+        .localisation, .date{
+          color:$secondary-text-color;
+        }
+      }
+    }
+    .diary-program-container{
+      width: 90%;
+      min-width: 300px;
+      margin: 0 auto;
+      @media(min-width: 720px){
+        width: 50%;
+
+      }
+      .diary-program-picture{
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: 40%;
+        background-color: $primary-color;
+      }
+      h1.program-name{
+        font-size:$subtitle-size;
+      }
+      .diary-program-description{
+        font-size: $important-text-size;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        display: block;
+      }
+      .localisation, .date{
+        font-size: $text-size;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+
+      }
+    }
+  }
+}

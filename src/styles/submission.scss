@@ -2,11 +2,6 @@
   min-height: calc(100vh - 190px);
   .form-container{
     background-color: $primary-color;
-    background-image: url(/src/img/Logo_HitboxMakers_background.svg);
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-position: center 115px;
-    background-size: 100% calc(100vh - 190px);
     flex-wrap: wrap;
     width: 100vw;
     @include flex(row, flex-start, space-around);
