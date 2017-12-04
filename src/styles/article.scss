@@ -1,19 +1,16 @@
 .news-section{
   .articles-list{
     flex-wrap: wrap;
-    margin-top: 2rem;
     @include flex(row, center, center);
     @media(min-width: 720px){
       @include flex(row, center, space-between);
     }
     .article{
       min-width: 300px;
-      max-width: 400px;
+      width: 100%;
       flex: 1;
       margin-top: 1rem;
       margin-bottom: 2rem;
-      margin-right: 1rem;
-      margin-left: 1rem;
       @media(min-width: 720px){
         @include flex(row, center, space-between);
         margin-right:1rem;
@@ -70,10 +67,6 @@
   .full-article{
     .article-img-container{
       width: 100vw;
-      margin-left: -2rem;
-      @media(min-width: 845px){
-        margin-left: -7rem;
-      }
       img{
         display: block;
         margin: 0 auto;
@@ -105,7 +98,6 @@
       @media(min-width: 720px){
         width: 27%;
         min-width: 275px;
-        max-width: 27%;
       }
       .article-content-container{
         .article-title{

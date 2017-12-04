@@ -1,8 +1,8 @@
 .game-container{
-  min-height: calc(100vh - 190px);
   .game-search{
     display: block;
-    margin: 3rem auto 5rem;
+    margin: 0 auto 5rem;
+    padding-top:  3rem;
     min-width: 300px;
     width: 35%;
     background-color: transparent;
@@ -45,20 +45,26 @@
       }
       @media(min-width: 720px) {
         &:hover .description-container{
-        display: block;
         position: absolute;
         top: 0;
         left: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
       }
 
       }
       .description-container{
-        background-color: rgba(57, 57, 57, 0.9);
         height: 100%;
-        display: block;
         position: absolute;
         top: 0;
         left: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        .description{
+          background-color: rgba(57, 57, 57, 0.9);
+        }
         @media(min-width: 720px) {
           display: none;
         }
@@ -82,7 +88,7 @@
           color: $secondary-text-color;
           font-size: $text-size;
           line-height: 1rem;
-          max-height: 5rem;
+          max-height: 2rem;
           overflow: hidden;
           display: block;
         }

@@ -1,14 +1,6 @@
 .diary-container{
-  min-height: calc(100vh - 190px);
   article.diary-program{
     width: 100vw;
-    margin-left: -2rem;
-    padding: 1rem 2rem 3rem;
-    box-sizing: border-box;
-    @media(min-width: 860px){
-      margin-left: -7rem;
-      padding: 3rem 7rem 3rem;
-    }
     &:nth-child(odd) {
       background-color: $primary-color;
       background-image: url(/src/img/Logo_HitboxMakers_background.svg);
