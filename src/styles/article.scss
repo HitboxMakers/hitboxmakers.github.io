@@ -14,7 +14,7 @@
       @media(min-width: 720px){
         @include flex(row, center, space-between);
         margin-right:1rem;
-        margin-left: 0;
+        margin-left: 1rem;
         min-width: 45%;
         max-width: 45%;
       }
@@ -67,10 +67,9 @@
   .full-article{
     .article-img-container{
       width: 100vw;
-      img{
-        display: block;
-        margin: 0 auto;
-      }
+      background-image: url(http://lorempixel.com/400/200);
+      background-position: center;
+      background-size: cover;
     }
     .article-title{
       font-size: 36px;

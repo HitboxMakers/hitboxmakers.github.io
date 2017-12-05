@@ -52,7 +52,7 @@
       }
       .downloaded-files{
         width: 100%;
-        @include flex(row, flex-start, center);
+        @include flex(row, flex-start, space-around);
         @media(min-width: 720px) {
           @include flex(row, flex-start, space-between);
         }
