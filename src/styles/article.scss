@@ -9,12 +9,10 @@
       min-width: 300px;
       width: 100%;
       flex: 1;
-      margin-top: 1rem;
       margin-bottom: 2rem;
+      margin: 1rem;
       @media(min-width: 720px){
         @include flex(row, center, space-between);
-        margin-right:1rem;
-        margin-left: 1rem;
         min-width: 45%;
         max-width: 45%;
       }
