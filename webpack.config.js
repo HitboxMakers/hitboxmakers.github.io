@@ -21,8 +21,6 @@ const pages = srcFiles
         extname(f) === '.html'
     )
 
-console.log(pages, srcFiles, srcFiles.map(f => typeof f))
-
 module.exports = {
     entry  : resolve(src, 'index.js'),
     output: {
