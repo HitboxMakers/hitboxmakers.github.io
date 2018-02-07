@@ -1,14 +1,13 @@
-const webpack = require('webpack')
-const { resolve, extname, join, basename } = require('path')
+const {resolve, extname, join} = require('path')
 const HtmlPlugin = require('html-webpack-plugin')
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
-const {readdirSync, statSync} = require('fs');
+const {readdirSync, statSync} = require('fs')
 
 function readDirR(dir) {
     return statSync(dir).isDirectory()
         ? readdirSync(dir).reduce((r, f) => r.concat(readDirR(join(dir, f))), [])
 
-        : dir;
+        : dir
 }
 
 const src = resolve(__dirname, 'src')
@@ -23,37 +22,37 @@ const pages = srcFiles
 
 module.exports = {
     entry  : resolve(src, 'index.js'),
-    output: {
-        path: dist,
+    output : {
+        path    : dist,
         filename: 'script.js'
     },
-    module: {
+    module : {
         rules: [
             {
-                test: /\.js$/,
+                test  : /\.js$/,
                 loader: "babel-loader"
             },
             {
                 test: /\.css$/,
-                use: ExtractTextPlugin.extract({
+                use : ExtractTextPlugin.extract({
                     fallback: "style-loader",
-                    use: "css-loader"
+                    use     : "css-loader"
                 })
             },
             {
-                test: /\.html$/,
+                test  : /\.html$/,
                 loader: 'html-loader?interpolate'
             },
             {
                 test: /\.scss$/,
-                use: ExtractTextPlugin.extract({
+                use : ExtractTextPlugin.extract({
                     fallback: "style-loader",
-                    use: "css-loader!sass-loader"
+                    use     : "css-loader!sass-loader"
                 })
             },
             {
-                test: /\.(jpe?g|svg|png|gif|woff2?|eot|ttf)$/,
-                loader: 'file-loader',
+                test   : /\.(jpe?g|svg|png|gif|woff2?|eot|ttf)$/,
+                loader : 'file-loader',
                 options: {
                     name: '[path][name].[ext]'
                 }

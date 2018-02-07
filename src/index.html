@@ -5,29 +5,43 @@
     <title>HitBoxMakers</title>
 </head>
 <body>
-    <div class="background-logo-container">
-        <img class="background-logo" src="./img/Logo_HitboxMakers_background.svg" alt="logo HitBox">
+<div class="background-logo-container">
+    <img class="background-logo" src="./img/Logo_HitboxMakers_background.svg" alt="logo HitBox">
+</div>
+<header class="header-home has-background-image">
+    ${require('./partials/nav.html')}
+    <div class="into-Logo-container">
+        <img class="into-Logo" src="./img/Logo_HitboxMakers_Full_final.png" alt="">
     </div>
-    <header class="header-home has-background-image">
-        ${require('./partials/nav.html')}
-        <div class="into-Logo-container">
-            <img class="into-Logo" src="./img/Logo_HitboxMakers_Full_final.png" alt="">
-        </div>
-        <div class="presentation-container">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a ipsum dolor. Pellentesque venenatis
-                congue nibh vitae vulputate. Vestibulum eu scelerisque nunc, nec gravida lacus.</p>
-        </div>
-        <a class="diary-link" href="/diary.html">Agenda</a>
-    </header>
-    <section class="news-section">
-        <h1 class="main-section-title padding-title"><strong>A</strong>ctualité</h1>
-        <div class="articles-list padding">
-            ${require('./partials/article.html')}
-            ${require('./partials/article.html')}
-            ${require('./partials/article.html')}
-            ${require('./partials/article.html')}
-        </div>
-    </section>
-    ${require('./partials/footer.html')}
+    <div class="presentation-container">
+        <p>Hitbox est une communauté de création de jeu tourangelle</p>
+    </div>
+</header>
+<section class="news-section padding">
+    <h1 class="main-section-title padding-title"><strong>H</strong>itbox game jam #4</h1>
+    <p>
+        C'est une game jam du vendredi au dimanche !<br>
+        Ce qui veut dire que vous venez pour créer un jeu vidéo ou un jeu de plateau seul ou en équipe le vendredi<br>
+        et vous repartez avec un jeu ou un prototype de jeu le dimanche soir.<br>
+        Le vendredi soir sera un moment convivial pour constituer une équipe autour d'un verre ou simplement parler création de jeu avant de se lancer.<br>
+        Le samedi matin pour ceux que ça intéresse il y aura des ateliers pour lancer votre premier jeu.<br>
+        Le dimanche on fait tout ce que l'on peut pour finir, et on fini en beauté autour d'un verre à nouveau afin de tester les jeux des uns et des autres tout en discutant de ce weekend de travail acharné.<br>
+    </p>
+    <p>Ce que nous vous fournissons pour bosser sur votre jeu :</p>
+    <ul>
+        <li>De l'internet</li>
+        <li>Du courant</li>
+        <li>De quoi vous nourrir et boire le vendredi soir et le dimanche soir</li>
+        <li>Des gens disponibles pour vous aider durant le weekend</li>
+        <li>Un cadre créatif idéal pour faire des jeux</li>
+    </ul>
+
+    <p>Attention :</p>
+    <ul>
+        <li>Il ne sera pas possible de rester dormir sur place, prévoir un lieu de couchage</li>
+        <li>Pour la nourriture le reste du temps il y aura un frigo pour stocker votre nourriture au besoin</li>
+    </ul>
+</section>
+${require('./partials/footer.html')}
 </body>
 </html>
