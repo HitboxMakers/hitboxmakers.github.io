@@ -1,4 +1,8 @@
 .news-section{
+  text-align: center;
+  & > * {
+    text-align: left;
+  }
   .articles-list{
     flex-wrap: wrap;
     @include flex(row, center, center);

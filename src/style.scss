@@ -12,6 +12,7 @@ body{
     background-color: $primary-color;
     padding-top: 180px;
     padding-bottom: 100px;
+    text-align: center;
     .into-Logo-container{
       text-align: center;
     }
@@ -34,6 +35,30 @@ body{
       color: $primary-color;
       text-decoration: none;
       cursor: pointer;
+    }
+  }
+  .simple-button {
+    display: inline-block;
+    box-sizing: border-box;
+
+    background-color: $secondary-color;
+    border: none;
+    border-radius: 3px;
+    padding: 8px;
+    margin: 0 auto;
+
+    text-decoration: none;
+    color:$third-color;
+    font-size: 19px;
+    line-height: 19px;
+    font-weight: bolder;
+    text-align: center;
+
+    box-shadow: 2px 2px 5px #393939;
+  }
+  .news-section {
+    & > .simple-button:last-of-type {
+      margin-top: 20px;
     }
   }
 }
