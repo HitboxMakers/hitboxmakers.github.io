@@ -1,0 +1,83 @@
+.pricing-card{
+  background: #ddd;
+  padding: 5rem 3rem;
+  text-align: center;
+  &.pricing-primary{
+   background-color: #4E74FF;
+  }
+  &.pricing-info{
+   background-color: #3CBFFA;
+  }
+  &.pricing-secondary{
+   background-color: #1F2946;
+  }
+  h3{
+    color: #fff;
+  }
+
+  .price{
+    font-size: 5em;
+    padding: 2rem 0;
+    color: white;
+    span{
+        font-size: 0.2em;
+    }
+  }
+}
+
+
+.features{
+  padding-left:40px;
+  list-style:none;
+  li{
+    position: relative;
+    margin-bottom: 30px;
+
+    &:before {    
+      font-family: 'FontAwesome';
+      content: '\f00c';
+      position: absolute;
+      left: -40px;
+      color:  $link-color;
+      border: 1px solid $link-color;
+      width: 24px;
+      height: 24px;
+      line-height: 24px;
+      text-align: center;
+      border-radius: 50px;
+      top: 2px;
+    }
+  }
+}
+
+.download-card{
+  background-color: #F5F5F5;
+  text-align: center;
+  padding: 5rem 8rem;
+  margin-bottom: 20px;
+  @media (min-width: $screen-md) {
+    padding: 5rem 15rem;
+    margin-bottom: 0;
+  }
+}
+
+.pricing-features{
+  background-color: #F5F5F5;
+  padding: 5rem 3rem;
+  @media (max-width: $screen-md-min) {
+    margin-bottom: 30px;
+  }
+  
+  .features{
+    margin-bottom: 40px;
+    padding-left: 30px;
+    min-height: 300px;
+    li{
+      margin-bottom: 20px;
+      &:before{
+        left: -30px;
+        border:none;
+      }
+    }
+  }
+}

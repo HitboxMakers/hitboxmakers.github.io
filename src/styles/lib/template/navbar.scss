@@ -1,0 +1,10 @@
+.navbar-logo-img{
+  margin-top: -4px;
+}
+.navbar-btn{
+  float:left;
+  @media (max-width: $screen-md) {
+    margin-left:15px;
+    margin-right:15px;
+  }
+}

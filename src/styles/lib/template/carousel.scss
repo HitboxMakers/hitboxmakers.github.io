@@ -1,0 +1,15 @@
+
+.carousel-indicators{
+  position: relative;
+  margin-top: 30px;
+  
+  li{
+    background-color: #ddd;
+    width: 12px;
+    height: 12px;
+    &.active{
+      margin: 1px;
+      background-color: #eee;
+    }
+  }
+}

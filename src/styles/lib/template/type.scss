@@ -1,0 +1,24 @@
+blockquote {
+    border-left: none;
+    font-size: 28px;
+    small {
+      font-size:0.6em;
+      &::before {
+          content: none;
+
+      }
+    }
+}
+
+h1,.h1, h2, .h2{
+  margin-bottom: 23px;
+}
+
+.signature{
+  font-family: 'La Belle Aurore', cursive;
+  font-size: 36px;
+}
+
+.link-like-text{
+  color: $text-color;
+}

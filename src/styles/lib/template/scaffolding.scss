@@ -1,0 +1,60 @@
+body{
+  padding-top: $navbar-height;
+}
+
+.page-base-image {
+  margin: 50px auto;
+}
+
+.section-container{
+  padding: 60px 0;
+  &.no-padding{
+    padding-top: 0;
+  }
+}
+
+.footer-container {
+  padding: 30px 0;
+  border-top: 1px solid #eee;
+  .email-container {
+      padding: 30px 0;
+  }
+}
+
+.section-container-spacer{
+  margin-bottom: 30px;
+}
+
+.background-color-container{
+  background-color: $headings-color;
+  padding: 60px 0;
+}
+
+.border-section-container{
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+}
+
+.white-text-container{
+  h1,h2,h3,h4,h5, p{
+    color: white;
+    text-shadow: 0 1px 3px $gray-base;
+  }
+}
+
+.background-image-container{
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  padding: 12% 0;
+}
+
+.opacity{
+  background-color: rgba(0,0,0,0.2);
+  position: absolute;
+  left:0;
+  right:0;
+  bottom:0;
+  top:0;
+}
