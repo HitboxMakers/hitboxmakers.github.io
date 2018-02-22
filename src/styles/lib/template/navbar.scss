@@ -1,5 +1,6 @@
 .navbar-logo-img{
   margin-top: -4px;
+  height: 100%;
 }
 .navbar-btn{
   float:left;
@@ -7,4 +8,8 @@
     margin-left:15px;
     margin-right:15px;
   }
+}
+
+.navbar-brand {
+  padding: 25%;
 }
