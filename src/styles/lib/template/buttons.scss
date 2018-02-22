@@ -14,11 +14,11 @@
 }
 
 .btn-primary{
-  @include gradient-horizontal($brand-primary, #3B1BFF);
+  @include gradient-horizontal($brand-primary, $brand-primary-end);
     background-size: 200% auto;
 
   &:hover{
-    @include gradient-horizontal($brand-primary, #3B1BFF);
+    @include gradient-horizontal($brand-primary, $brand-primary-end);
     background-position: center center; 
   }
 }
