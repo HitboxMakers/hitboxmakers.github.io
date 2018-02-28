@@ -4,6 +4,10 @@ import './styles/main.scss'
 // Import all JS lib for webpack compilation
 import './scripts/lib'
 
+import SmoothScroll from 'smooth-scroll'
+
+new SmoothScroll('a[href*="#"]');
+
 // Import your custom function
 import { googleMapInit, navActivePage } from './scripts/main'
 
